@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin Karimi - Web Developer</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #fff; /* Set all text to white */
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            background-image: url('alo.png');
+            background-size: cover;
+        }
+        header .logo h1 {
+            margin: 0;
+            font-size: 23px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+        }
+        .profile {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .services {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black; /* Override white text for service section */
+            background-image: url('blu.jpg');
+            background-size: cover;
+        }
+        .contact-form, .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            background-image: url('alo.png');
+            background-size: cover;
+            color: ghostwhite; /* Override white text for contact sections */
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form form input, .contact-form form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: orangered;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .contact-form form button:hover {
+            background-color: #ff4500;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 2;
+            background-image: url('alo.png');
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .whatsapp-icon {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <!-- Include EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("xOKmmPXxm7-GM2xAt"); // Replace with your EmailJS user ID
+        })();
+    </script>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="ela.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <div class="logo">
+            <h1>Colin Karimi</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="profile" class="profile">
+            <img src="collo.png" alt="Colin Karimi">
+            <h2>About Me</h2>
+            <p>Colin Karimi is a skilled web developer with expertise in designing and building high-performance websites tailored to meet client needs. With a strong background in front-end and back-end development, Colin specializes in creating responsive, secure, and SEO-optimized websites that enhance user experience and business growth.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <p>At Colin Karimi Web Development, we offer a comprehensive range of services to meet all your web development needs. Our expertise spans across various domains, ensuring that we can provide tailored solutions for each client.</p>
+            <p>Our web development services focus on building responsive and dynamic websites using the latest technologies. We ensure that your website is not only visually appealing but also functional and user-friendly. Our team of experienced developers works diligently to create websites that are optimized for performance and security.</p>
+            <p>In addition to web development, we specialize in UI/UX design. We understand the importance of a great user experience and design interfaces that are intuitive and engaging. Our design process involves thorough research and testing to ensure that the final product meets the needs of your users.</p>
+            <p>SEO optimization is another key service we offer. We help improve your website's visibility and search engine ranking through effective SEO strategies. Our team stays up-to-date with the latest SEO trends and techniques to ensure that your website ranks high on search engine results pages.</p>
+            <p>We also provide consulting services to help you navigate the complexities of web development and digital strategies. Our experts offer valuable insights and advice to help you make informed decisions and achieve your business goals.</p>
+        </section>
+        <section id="contact" class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: karimicolin254@gmail.com</p>
+            <p>Phone: +254 738 210 181</p>
+            <p>Address: Kirinyaga, Kenya</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Colin Karimi. All rights reserved.</p>
+        <a href="https://wa.me/254738210181" class="whatsapp-icon" target="_blank">&#x1F4F1;</a>
+    </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Responsive navigation menu
+        const nav = document.querySelector('nav ul');
+        const navToggle = document.createElement('div');
+        navToggle.classList.add('nav-toggle');
+        navToggle.innerHTML = '&#9776;';
+        document.querySelector('header').appendChild(navToggle);
+
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Close navigation menu when a link is clicked
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_qv2s6tz', 'template_7gl9qvo', this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    alert('Message sending failed. Please try again.');
+                });
+        });
+    </script>
+</body>
+</html>
